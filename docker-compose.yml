@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  miner_1:
+    image: cryptoshoveler/mminer4:12.0
+    command: -a "0x18ed95e4039ebcfE720a870Ede6E02789BBa427b"
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            device_ids: ['0']
+            capabilities: [gpu]
+  miner_2:
+    image: cryptoshoveler/mminer4:12.0
+    command: -a "0x18ed95e4039ebcfE720a870Ede6E02789BBa427b"
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            device_ids: ['1']
+            capabilities: [gpu]
