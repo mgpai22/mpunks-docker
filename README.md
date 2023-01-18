@@ -5,6 +5,8 @@ This allows you to mine mpunks with docker compose.
 ## Deployment
 
 - `git clone https://github.com/mgpai22/mpunks-docker.git && cd mpunks-docker`
+- Make sure [docker](https://docs.docker.com/get-docker/) and [docker compose](https://docs.docker.com/compose/install/other/) is installed
+    - Use [this script](https://github.com/mgpai22/docker-install-script) to install if you are on Ubuntu (wsl does not count!)
 - Edit the `docker-compose` file to add or remove gpus (note the pattern for each service!)
   - Make sure you change `0x...` to your address!
 - ```
